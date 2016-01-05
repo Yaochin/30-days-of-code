@@ -1,0 +1,20 @@
+*.class
+
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/project/
+project/target/
+
+# ignore intellij files
+.idea_modules
+.idea
+*.iml
+*.iws
+*.ipr
+
