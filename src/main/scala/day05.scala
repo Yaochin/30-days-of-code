@@ -1,6 +1,6 @@
 import scala.io.StdIn
 
-object day05 {
+object Day05 {
   def main(args: Array[String]) {
     val t = StdIn.readLine().toInt
 

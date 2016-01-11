@@ -28,7 +28,7 @@ class Person {
 
 }
 
-object day04 {
+object Day04 {
 
   def main(args: Array[String]) {
     val T = scala.io.StdIn.readInt()

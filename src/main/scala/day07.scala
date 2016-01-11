@@ -1,4 +1,4 @@
-object day07 {
+object Day07 {
 
   def main(args: Array[String]) {
     val sc = new java.util.Scanner (System.in)

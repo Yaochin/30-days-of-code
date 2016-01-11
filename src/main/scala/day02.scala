@@ -1,6 +1,6 @@
 import scala.io.StdIn
 
-object day02 {
+object Day02 {
 
   def main(args: Array[String]): Unit = {
     val m = StdIn.readLine().toDouble

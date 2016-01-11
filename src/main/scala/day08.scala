@@ -1,6 +1,6 @@
 import scala.io.StdIn
 
-object day08 {
+object Day08 {
 
   def main(args: Array[String]): Unit = {
 
