@@ -10,27 +10,28 @@ object Day10 {
 
       val maxIndex = getMaxIndex(v)
 
-//      println(s"max. index: $maxIndex")
-
-      var remaining = v
-
-      for (j <- 0 to maxIndex) {
-        val index = maxIndex - j
-        val r = get1or0(remaining, index)
-
-        print(r)
-
-        if ( r == 1 ) {
-          val valueOf2 = Math.pow(2, index).toInt
-          remaining = remaining - valueOf2
-        }
-
-
-      }
-      println()
+      printOneBit(v, maxIndex)
 
     }
 
+  }
+
+  def printOneBit(v: Int, index: Int): Unit = {
+
+    val bitValue = Math.pow(2, index).toInt
+    val remaining = if ( bitValue <= v ) {
+      print("1")
+      v - bitValue
+    } else {
+      print("0")
+      v
+    }
+
+    if ( index == 0 ) {
+      println()
+    } else {
+      printOneBit(remaining, index - 1 )
+    }
 
   }
 
@@ -39,15 +40,9 @@ object Day10 {
     while ( Math.pow(2, i) <= v ) {
       i = i+1
     }
-    i - 1
-  }
 
-  def get1or0(v: Int, index: Int): Int = {
-    if ( Math.pow(2, index) > v ) {
-      0
-    } else {
-      1
-    }
+    if ( i == 0 ) 0
+    else i - 1
   }
 
   // ex: 7 = 2^2*1 + 2^1*1 + 2^0*1

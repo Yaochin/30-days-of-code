@@ -1,17 +1,17 @@
-object day01 {
+object Day01 {
   def main(args: Array[String]) {
-    getDataType(5.35)
-    getDataType('a')
-    getDataType(false)
-    getDataType(100)
-    getDataType("I am a code monkey")
-    getDataType(true)
-    getDataType(17.3)
-    getDataType('c')
-    getDataType("derp")
+    printlnDataType(5.35)
+    printlnDataType('a')
+    printlnDataType(false)
+    printlnDataType(100)
+    printlnDataType("I am a code monkey")
+    printlnDataType(true)
+    printlnDataType(17.3)
+    printlnDataType('c')
+    printlnDataType("derp")
   }
 
-  def getDataType(input: Any): Unit = {
+  def printlnDataType(input: Any): Unit = {
     input match {
       case i: Int => println("Primitive : int")
       case b: Boolean => println("Primitive : boolean")
